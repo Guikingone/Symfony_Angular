@@ -20,7 +20,8 @@
 
 # NPM Directory
 /node_modules/
+/web/assets/*
 
 # Compile directory
-/web/prod/Angular/*
+/web/prod/app/*
 /typings

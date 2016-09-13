@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" amp="">
+<html lang="en" amp>
     <head>
         <meta charset="UTF-8"/>
         <title>{% block title %}AngularJS into Symfony !{% endblock %}</title>
@@ -77,7 +77,9 @@
                 }</style>
         </noscript>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('assets/material-design-lite/material.css') }}">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
     </head>
     <body>
@@ -88,11 +90,11 @@
         <footer></footer>
     {% block javascripts %}
         <!-- Dependencies -->
-
+            <script src="{{ asset('assets/material-design-lite/material.js') }}"></script>
         <!-- Globals JS -->
 
         <!-- Angular JS -->
-        <script src="{{ asset('prod/app/index.js') }}"></script>
+        <script src="{{ asset('prod/app/index.js') }}" async></script>
     {% endblock %}
     </body>
 </html>
