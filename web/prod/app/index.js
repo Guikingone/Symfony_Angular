@@ -51225,11 +51225,17 @@
 	            date: Date(),
 	            tags: []
 	        };
+	        this.articles = [];
 	    }
+	    AppComponent.prototype.addArticles = function (newArticle) {
+	        if (newArticle) {
+	            this.articles.push(newArticle);
+	        }
+	    };
 	    AppComponent = __decorate([
 	        core_1.Component({
 	            selector: "my-app",
-	            template: "\n        <label>Veuillez entrer les informations relatives a l'article : </label>\n            <input [(ngModel)]=\"article.title\" placeholder=\"name\">\n            <input [(ngModel)]=\"article.author\" placeholder=\"Auteur\" />\n            <input [(ngModel)]=\"article.tags\" placeholder=\"Tags\" />\n        <br />\n        <br />\n        <p>Voici votre recherche : <em>{{article.title}}</em> \u00E9crit par <strong>{{article.author}}</strong> dans les tags: {{ article.tags }}</p>\n        "
+	            templateUrl: './dev/Angular/Templates/index.html.twig'
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], AppComponent);
