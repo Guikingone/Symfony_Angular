@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <title>{% block title %}AngularJS into Symfony !{% endblock %}</title>
         <link rel="canonical" href="http://example.ampproject.org/article-metadata.html"/>
-        <meta name="viewport" content="width=device-width, minimum-scale=1,initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="application/ld+json">
               {
                 "@context": "http://schema.org",
@@ -78,7 +78,7 @@
         </noscript>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
         {% block stylesheets %}
-            <link rel="stylesheet" href="{{ asset('assets/material-design-lite/material.css') }}">
+            <link rel="stylesheet" href="{{ asset('dev/vendor/material-design-lite/material.css') }}">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
     </head>
@@ -90,7 +90,7 @@
         <footer></footer>
     {% block javascripts %}
         <!-- Dependencies -->
-            <script src="{{ asset('assets/material-design-lite/material.js') }}"></script>
+            <script src="{{ asset('dev/vendor/material-design-lite/material.js') }}"></script>
         <!-- Globals JS -->
 
         <!-- Angular JS -->

@@ -1,0 +1,21 @@
+{
+  "name": "symfony_angular",
+  "description": "A simple case of using Angular 2 into Symfony 3",
+  "main": "",
+  "authors": [
+    "Guillaume Loulier <guillaume.loulier[at]hotmail.fr>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Guikingone/Symfony_Angular",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/dev/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.2.1"
+  }
+}

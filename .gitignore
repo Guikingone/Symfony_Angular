@@ -20,7 +20,7 @@
 
 # NPM Directory
 /node_modules/
-/web/assets/*
+/web/dev/vendor/*
 
 # Compile directory
 /web/prod/app/*

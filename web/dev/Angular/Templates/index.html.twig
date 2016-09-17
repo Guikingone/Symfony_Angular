@@ -1,21 +1,6 @@
 <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--12-col-phone">
-        <label>Veuillez entrer les informations relatives a l'article : </label>
-        <input [(ngModel)]="article.title" placeholder="name">
-        <input [(ngModel)]="article.author" placeholder="Auteur" />
-        <input [(ngModel)]="article.tags" placeholder="Tags" type="text" />
-        <br />
-        <br />
-        <p>Voici vos résultats : {{article.title}} écrit par {{article.author}}.</p>
-        <br />
-        <br />
-        <input class="mdl-textfield__input" #newArticle
-               (keyup.enter)="addArticles(newArticle.value)"
-               (blur)="addArticles(newArticle.value); newArticle.value='' ">
-
-        <button class="mdl-button mdl-js-button mdl-button--raised" (click)=addArticles(newArticle.value)>Ajouter</button>
-        <ul>
-            <li *ngFor="let article of articles">{{article}}</li>
-        </ul>
-    </div>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" (click)="onClickButton()">
+        Button
+    </button>
+    <p>{{ clickMessage }}</p>
 </div>
