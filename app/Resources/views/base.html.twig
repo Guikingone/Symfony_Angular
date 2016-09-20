@@ -78,7 +78,8 @@
         </noscript>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
         {% block stylesheets %}
-            <link rel="stylesheet" href="{{ asset('dev/vendor/material-design-lite/material.css') }}">
+            <link rel="stylesheet" href="{{ asset('dev/vendor/material-design-lite/material.css') }}" />
+            <link rel="stylesheet" href="{{ asset('dev/vendor/bootstrap/dist/css/bootstrap.min.css') }}" />
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
     </head>
@@ -90,7 +91,8 @@
         <footer></footer>
     {% block javascripts %}
         <!-- Dependencies -->
-            <script src="{{ asset('dev/vendor/material-design-lite/material.js') }}"></script>
+        <script src="{{ asset('dev/vendor/material-design-lite/material.js') }}"></script>
+        <script src="{{ asset('dev/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
         <!-- Globals JS -->
 
         <!-- Angular JS -->

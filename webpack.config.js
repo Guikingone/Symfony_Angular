@@ -6,7 +6,7 @@ var PROD_DIR = path.resolve(__dirname, "web/prod/");
 
 var config = {
     entry: {
-        'index': DEV_DIR + "/main.ts"
+        'index': DEV_DIR + "/Angular/main.ts"
     },
     output: {
         path: PROD_DIR + "/app",
